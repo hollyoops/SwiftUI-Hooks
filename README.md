@@ -20,11 +20,16 @@ Enhances reusability of stateful logic and gives state and lifecycle to function
 - [Introducing Hooks](#introducing-hooks)
 - [Hooks API](#hooks-api)
 - [Rules of Hooks](#rules-of-hooks)
+  - [Only Call Hooks at the Function Top Level](#only-call-hooks-at-the-function-top-level)
+  - [Only Call Hooks from `HookScope` or `HookView.hookBody`](#only-call-hooks-from-hookscope-or-hookviewhookbody)
 - [Building Your Own Hooks](#building-your-own-hooks)
 - [How to Test Your Custom Hooks](#how-to-test-your-custom-hooks)
 - [Context](#context)
 - [Requirements](#requirements)
 - [Installation](#installation)
+  - [Swift Package Manager for Apple Platforms](#swift-package-manager-for-apple-platforms)
+  - [Cocopod](#cocopod)
+- [Acknowledgements](#acknowledgements)
 - [License](#license)
 
 ---
@@ -526,7 +531,12 @@ See also: [React Context](https://reactjs.org/docs/context.html)
 Xcode menu `File > Swift Packages > Add Package Dependency`.  
 
 ```text
-Repository: https://github.com/ra1028/SwiftUI-Hooks
+Repository: https://github.com/hollyoops/SwiftUI-Hooks
+```
+
+### Cocopod
+```
+pod SwUIHooks
 ```
 
 ---
