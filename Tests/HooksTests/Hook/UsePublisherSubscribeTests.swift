@@ -7,7 +7,8 @@ import XCTest
 final class UsePublisherSubscribeTests: XCTestCase {
     func testUpdate() {
         let subject = PassthroughSubject<Void, URLError>()
-        let tester = HookTester(0) { value in
+        var value = 0
+        let tester = HookTester {
             usePublisherSubscribe {
                 subject.map { value }
             }
@@ -23,13 +24,13 @@ final class UsePublisherSubscribeTests: XCTestCase {
 
         XCTAssertEqual(tester.value.phase.value, 0)
 
-        tester.update(with: 1)
+        value = 1
         tester.value.subscribe()
         subject.send()
 
         XCTAssertEqual(tester.value.phase.value, 1)
 
-        tester.update(with: 2)
+        value = 2
         tester.value.subscribe()
         subject.send()
 
