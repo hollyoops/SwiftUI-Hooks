@@ -12,14 +12,13 @@
 
 ---
 
-- [Introduction](#introduction)
-- [Getting Started](#getting-started)
-- [Hooks API](#hooks-api)
-- [Rules of Hooks](#rules-of-hooks)
-- [Building Your Own Hooks](#building-your-own-hooks)
-- [How to Test Your Custom Hooks](#how-to-test-your-custom-hooks)
-- [Context](#context)
-- [License](#license)
+- [\<\<\<\<\<\<\< HEAD](#-head)
+  - [Requirements](#requirements-1)
+  - [Installation](#installation-1)
+    - [Swift Package Manager for Apple Platforms](#swift-package-manager-for-apple-platforms)
+    - [Cocopod](#cocopod)
+  - [Acknowledgements](#acknowledgements)
+  - [License](#license)
 
 ---
 
@@ -601,6 +600,34 @@ var darkModeButton: some View {
 ```
 
 See also: [React Context](https://reactjs.org/docs/context.html)  
+
+---
+
+## Requirements
+
+- Swift 5.3+
+- Xcode 12.4.0+
+- iOS 13.0+
+- macOS 10.15+
+- tvOS 13.0+
+- watchOS 6.0+
+
+---
+
+## Installation
+
+### [Swift Package Manager for Apple Platforms](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app)
+
+Xcode menu `File > Swift Packages > Add Package Dependency`.  
+
+```text
+Repository: https://github.com/hollyoops/SwiftUI-Hooks
+```
+
+### Cocopod
+```
+pod SwUIHooks
+```
 
 ---
 
