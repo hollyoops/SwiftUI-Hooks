@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Hooks'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = 'Hooks for SwiftUI, It\'s react hooks counterpart'
 
   s.description      = <<-DESC
